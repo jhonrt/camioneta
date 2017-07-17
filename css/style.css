@@ -222,7 +222,7 @@ input:focus, textarea:focus {
 }
 
 .footer {
-  background: #fd6603;
+  background: #112731;
   padding: 50px 0px;
 }
 
@@ -252,7 +252,7 @@ input:focus, textarea:focus {
 .footer .contenedor {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 70px;
 }
 
 
@@ -358,6 +358,10 @@ input:focus, textarea:focus {
     margin: 0 auto;
     width: 300px;
   }
+  .footer .contenedor {
+  
+  padding: 0;
+}
 
   .intereses label {
     display: block;
@@ -510,6 +514,9 @@ input:focus, textarea:focus {
     align-items: stretch;
   }
   /* footer */
+
+
+
 
 }
 
