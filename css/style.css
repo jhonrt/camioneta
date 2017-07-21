@@ -51,7 +51,8 @@ input:focus, textarea:focus {
   background: lightgray;
 }
  a {
-  color: white;
+
+  color: #fd6603;
   text-decoration: none;
 }
 
@@ -65,7 +66,7 @@ input:focus, textarea:focus {
 
 
   background-color: #ffffff;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background.png);
     background-size: cover;
     background-position: bottom center;
 }
@@ -90,14 +91,17 @@ input:focus, textarea:focus {
 
 .titulo {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 0;
   margin-top: 70px;
+  color:#fc6603;
+  text-align: center;
 }
 
 .title-a {
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 0;
+  color: #fccb03;
 }
 .nosotros {
   color: gray;
@@ -184,14 +188,24 @@ input:focus, textarea:focus {
   background: #fd6603;
       padding-bottom: 60px;
 }
-.servicios .item-servicios{
+.item-servicios{
   width: 29%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .item-servicios figure{
   margin: 0;
 }
 .item-servicios figure img{
   width: 100%;
+}
+.item-servicios ul {
+  list-style: none;
+  padding: 0;
+
 }
 .servicios .descripcion-imagen-servicios{
   background: white;
@@ -222,20 +236,31 @@ input:focus, textarea:focus {
 }
 
 .footer {
-  background: #112731;
+  background: #F7F7f7;;
   padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+
+}
+.footer-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  
 }
 
 .contacto {
   display: flex;
-  width: 300px;
-  flex-wrap: wrap;
-  align-items: center;
+    background: #112731;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
 }
 
 .contacto img {
   display: block;
-  width: 70%;
 }
 
 .contacto strong {
@@ -249,11 +274,7 @@ input:focus, textarea:focus {
 }
 
 
-.footer .contenedor {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 70px;
-}
+
 
 
 .formulario {
@@ -317,7 +338,7 @@ input:focus, textarea:focus {
 
   /* portada */
   .titulo {
-    font-size: 45px;
+    font-size: 30px;
     margin-top: 30px;
   }
   .title-a {
@@ -398,6 +419,7 @@ input:focus, textarea:focus {
   .menu {
     position: static;
     display: block;
+    padding:26px 0px;
   }
 
   .menu li:first-child {
@@ -408,12 +430,9 @@ input:focus, textarea:focus {
     padding: 0;
     margin:0; 
   }
-
-  /* nosotros */
-  /*.video-demo {
-    margin: 0 10px;
-  }*/
-  /* nosotros */
+  .portada-titulo{
+        padding: 16px 0;
+  }
 
 }
 @media screen and (max-width: 500px) {
@@ -472,7 +491,8 @@ input:focus, textarea:focus {
     text-align: center;
   }
   .titulo {
-    font-size: 30px;
+        padding: 0 30px;
+    font-size: 26px;
   }
 
   .title {
@@ -484,13 +504,16 @@ input:focus, textarea:focus {
   .nosotros{
     display: flex;
     flex-flow: row wrap;
+    padding-bottom: 24px;
   }
  .nosotros .item-nosotros{
   width: 100%;
+  padding: 0 35px;
  }
  .nosotros .item-nosotros h3{
   text-align: center;
   font-size: 2em;
+  margin: 20px;
  }
  .nosotros .item-nosotros.b{
   text-align: left;
@@ -524,7 +547,7 @@ input:focus, textarea:focus {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .background {
-    background-image: url('../images/backgroundx2.jpg');
+    background-image: url('../images/background2x.png');
   }
 }
 
