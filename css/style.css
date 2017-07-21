@@ -41,6 +41,7 @@
 body {
   font-family: 'Allerta', sans-serif;
   margin: 0;
+  color: gray;
 }
 
 input, textarea {
@@ -125,15 +126,28 @@ input:focus, textarea:focus {
   display: flex;
   justify-content: space-around;
 }
+.titulo-descripcion-servicios{
+  color:#fd6603;
+}
+
+
 .titulo-servicios{
   color: white;
   text-align: center;
+ 
 }
 .titulo-servicios h2 {
   margin: 0;
   padding-top: 35px;
-}
+  font-size: 35px;
+  font-weight: bold;
 
+}
+.titulo-servicios h3{
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0 20px 15px;
+}
 
 .portada {
      color: white;
@@ -142,7 +156,7 @@ input:focus, textarea:focus {
   
 }
 .portada-titulo {
-      animation: opacidad 4.2s forwards ;
+      animation: opacidad 2.2s forwards ;
     opacity: 0;
 
 }
@@ -153,6 +167,7 @@ input:focus, textarea:focus {
 
 
 .menu {
+   animation: opacidad 2.2s forwards ;
   font-size: 21px;
     display: flex;
     justify-content: center;
@@ -220,6 +235,7 @@ input:focus, textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 
 }
 .autobuses-contenedor{
@@ -228,9 +244,31 @@ input:focus, textarea:focus {
 font-size: 25px;
 color:  #fc6603;
 }
+.autobuses-contenedor h2{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
 .items-autobuses{
+  border:1px solid;
+  display: flex;
+  justify-content: space-around;
+
 
 }
+.items-autobuses span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:  50px;
+  width: 200px;
+  height: 200px;
+border-radius: 50%;
+background:  #fc6603;
+color: white;
+
+}
+
 .vehiculos{
    background: #fd6603;
    text-align: center;
@@ -376,6 +414,12 @@ color:  #fc6603;
 }
 
 @media screen and (max-width: 767px) {
+
+.titulo-descripcion-servicios{
+    font-size: 15px;
+    text-align: center;
+}
+
   /* footer */
   .footer .contenedor {
     display: block;
@@ -417,6 +461,7 @@ color:  #fc6603;
 }
 
 @media screen and (max-width: 650px) {
+
 
   .header {
     text-align: center;
@@ -462,6 +507,9 @@ color:  #fc6603;
   }
   .header .contenedor {
     position: static;
+  }
+  .logotipo{
+    padding-top: 25px;
   }
   .menu {
     background: rgba(253, 102, 3, 0.61);
@@ -548,7 +596,12 @@ color:  #fc6603;
   }
   /* footer */
 
-
+.mapa{
+  margin-top: 30px;
+}
+.mapa iframe{
+  width: 100%;
+}
 
 
 }
