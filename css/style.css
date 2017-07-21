@@ -156,6 +156,7 @@ input:focus, textarea:focus {
   font-size: 21px;
     display: flex;
     justify-content: center;
+    background: #fc6603;
 }
 
 .menu li {
@@ -167,7 +168,7 @@ input:focus, textarea:focus {
   content: '∘';
   font-size: 50px;
   line-height: 20px;
-  color: #fd6603;
+  color:  #ffffff;;
 }
 
 .menu a {
@@ -213,14 +214,23 @@ input:focus, textarea:focus {
 }
 
 .autobuses{
-    padding: 100px 0px;
+    height:450px; 
     text-align: center;
     background-image: url(../images/autobuses.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center center; */
-}
+    background-position: center;
 
+}
+.autobuses-contenedor{
+  margin: 0;
+  padding:0; 
+font-size: 25px;
+color:  #fc6603;
+}
+.items-autobuses{
+
+}
 .vehiculos{
    background: #fd6603;
    text-align: center;
