@@ -241,16 +241,31 @@ input:focus, textarea:focus {
 .autobuses-contenedor{
   margin: 0;
   padding:0; 
-font-size: 25px;
+font-size: 25px;  
 color:  #fc6603;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 .autobuses-contenedor h2{
+    padding-top: 30px;
   margin: 0;
   display: flex;
   justify-content: center;
+  animation: slidein 2.2s forwards ;
 }
 .items-autobuses{
-  border:1px solid;
+  
   display: flex;
   justify-content: space-around;
 
@@ -284,7 +299,7 @@ color: white;
 }
 
 .footer {
-  background: #F7F7f7;;
+  background: #95340a;
   padding: 50px 0px;
   display: flex;
   justify-content: center;
@@ -295,12 +310,13 @@ color: white;
   flex-direction: column;
   align-items: flex-end;
   text-align: center;
+  color: white;
   
 }
 
 .contacto {
-  display: flex;
-    background: #112731;
+  display: flex; 
+    background: #e0c494;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -329,6 +345,12 @@ color: white;
   display: flex;
   width: 450px;
   color: white;
+}
+.contacto h2{
+      color: #95340a;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 43px;
 }
 
 
@@ -487,6 +509,15 @@ color: white;
   }
   .portada-titulo{
         padding: 16px 0;
+  }
+
+  .items-autobuses span {
+    width: 150px;
+    height: 150px;
+   
+  }
+  .autobuses-contenedor{
+    font-size: 17px;
   }
 
 }
