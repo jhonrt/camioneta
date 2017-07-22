@@ -180,48 +180,63 @@
       </div>
     </section>
     <section class="contacto contenedor">
+          <h2>Contacto</h2>
 
-      <div class="formulario-contacto">    
-    <h2>Contacto</h2>
+
+      <div class="contenedor-contacto">
+        <div class="formulario-contacto">    
+
+          <form class="formulario">
+            <div class="col1">
+              <label for="nombre">Nombre</label>
+              <input type="text" required id="nombre" name="nombre"/>
+              <label for="email">E-mail</label>
+              <input type="email" required id="email" name="email"/>
+              <div class="sexo">
+                <label for="mujer">
+                  <input type="radio" id="mujer" checked name="sexo" value="mujer"> mujer
+                </label>
+                <label for="hombre">
+                  <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
+                </label>
+              </div>
+              <div class="intereses">
+                <label for="cotizacion">
+                  <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
+                </label>
+                <label for="reclamos">
+                  <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
+                </label>
+                <label for="comentarios">
+                  <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
+                </label>
+                <label for="otros">
+                  <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+                </label>
+              </div>
+            </div>
+            <div class="col2">
+              <label for="comentarios">Comentarios</label>
+              <textarea name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
+              <input type="submit" value="Enviar" class="button"/>
+            </div>
+          </form>
+      
+        </div>
+        <div class="info-contacto">
+          <p>Cotytsa agradece que nos envies tus comentarios a través de nuestro formulario </p>
+          <p>Dirección: Lorem ipsum dolor sit amet, consectetur soluta.</p>
+          <p>Telefono: 223245542</p>
+          <p>Correo: me@cotytsa.com</p>
+      
           
-        <form class="formulario">
-          <div class="col1">
-            <label for="nombre">Nombre</label>
-            <input type="text" required id="nombre" name="nombre"/>
-            <label for="email">E-mail</label>
-            <input type="email" required id="email" name="email"/>
-            <div class="sexo">
-              <label for="mujer">
-                <input type="radio" id="mujer" checked name="sexo" value="mujer"> mujer
-              </label>
-              <label for="hombre">
-                <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
-              </label>
-            </div>
-            <div class="intereses">
-              <label for="cotizacion">
-                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
-              </label>
-              <label for="reclamos">
-                <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
-              </label>
-              <label for="comentarios">
-                <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
-              </label>
-              <label for="otros">
-                <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
-              </label>
-            </div>
-          </div>
-          <div class="col2">
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
-            <input type="submit" value="Enviar" class="button"/>
-          </div>
-        </form>
+        </div>
+
+        
       </div>
-      <div class="mapa ">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7543.006589186366!2d-98.19858619466035!3d19.041596872548624!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1500562544727" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+      <div class="mapa contenedor">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7543.006589186366!2d-98.19858619466035!3d19.041596872548624!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1500562544727" width="1580"  height="450" frameborder="0" style="border:0; " allowfullscreen></iframe>
       </div>
     </section>
 

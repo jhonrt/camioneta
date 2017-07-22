@@ -245,24 +245,13 @@ font-size: 25px;
 color:  #fc6603;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%; 
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 
 .autobuses-contenedor h2{
     padding-top: 30px;
   margin: 0;
   display: flex;
   justify-content: center;
-  animation: slidein 2.2s forwards ;
+ 
 }
 .items-autobuses{
   
@@ -316,15 +305,15 @@ color: white;
 
 .contacto {
   display: flex; 
-    background: #e0c494;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px 0;
+  flex-direction: column;
+  background: #e0c494;
 }
 
-.contacto img {
-  display: block;
+.contenedor-contacto{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px 50px; 
 }
 
 .contacto strong {
@@ -335,6 +324,15 @@ color: white;
   color: white;
   text-decoration: none;
   margin: 10px 10px 10px 0;
+}
+.contacto .info-contacto {
+  
+}
+
+
+.contacto .info-contacto p{
+  color:white;
+  font-size: 20px
 }
 
 
@@ -627,13 +625,19 @@ color: white;
   }
   /* footer */
 
-.mapa{
-  margin-top: 30px;
+.mapa {
+position: relative;
+padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
 }
-.mapa iframe{
-  width: 100%;
+.mapa iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
 }
-
 
 }
 
