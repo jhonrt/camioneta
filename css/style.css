@@ -57,6 +57,11 @@ input:focus, textarea:focus {
   text-decoration: none;
 }
 
+#object{
+
+  visibility: hidden;
+}
+
 .contenedor {
   max-width: 1580px;
   margin: auto;
@@ -125,6 +130,7 @@ input:focus, textarea:focus {
 .items-servicios{
   display: flex;
   justify-content: space-around;
+  visibility: hidden;
 }
 .titulo-descripcion-servicios{
   color:#fd6603;
@@ -229,7 +235,7 @@ input:focus, textarea:focus {
 }
 
 .autobuses{
-    height:450px; 
+    height:500px; 
     text-align: center;
     background-image: url(../images/autobuses.jpg);
     background-size: cover;
@@ -284,7 +290,7 @@ color: white;
 }
 
 .vehiculos #owl-demo{
-    text-align: center;padding: 60px 0 20px 0
+    text-align: center;padding: 20px 0 20px 0
 }
 
 .footer {
@@ -310,7 +316,6 @@ color: white;
 }
 
 .contenedor-contacto{
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   padding: 0 50px 50px; 
@@ -375,6 +380,10 @@ color: white;
 .formulario label, .sexo, .intereses {
   margin-bottom: 10px;
 }
+.media-form{
+  width: 45%;
+}
+
 
 
 .sexo {
@@ -421,14 +430,24 @@ color: white;
   }
   /* portada */
 
-
+ .mapa.mapa-contenedor{
+    width: 100%;
+  }
   /* nosotros */
   
   .nosotros {
     text-align:center;
   }
-  
- 
+  .contenedor-contacto{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+     .media-form {
+   width: auto;
+  }
   /* nosotros */
 
 }
@@ -478,6 +497,9 @@ color: white;
     zoom: 1.5;
   }
   /* footer */
+
+ 
+
 }
 
 @media screen and (max-width: 650px) {
