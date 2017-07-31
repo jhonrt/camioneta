@@ -1,328 +1,254 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Camionetas</title>
-    <meta charset="utf-8"/>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/animation.css"/>
-
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cotytsa</title>
+	<link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+      <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+ <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
 
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/owl.transitions.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"/> -->
-  </head>
-  <body>
-    <section id="portada" class="portada contenedor background"> <!-- portada -->
-     
-      <header id="header" class="header "> <!-- header -->        
-        <span class="burguer-button icon-menu" id="burguer-button"></span>
-        <nav class="menu" id="menu"> <!-- menu -->
-          <ul>
-            <li>
-              <a href="index.html">SERVICIOS</a>
-            </li>
-            <li>
-              <a href="#nosotros">NUESTROS VEHICULOS</a>
-            </li>
-            <li>
-              <a href="precios.html">CONTACTO</a>
-            </li>
-          </ul>
-        </nav>
+    .slider {
+        width: 100%;
+        margin: 50px auto;
+        background: #2c343b;
+    }
 
-      </header>
-      <figure class="logotipo"> <!-- logotipo -->
-          <img src="images/logo3.png" srcset="images/logo3.png 1x, images/logox2.png 2x" width="286" height="120" alt="Invie logotipo"/>
-        </figure>
-      <div class=" portada-titulo contenedor">
-        <h1 class="titulo">TU MEJOR OPCIÓN EN RENTA DE TRANSPORTE DE PASAJEROS</h1><!-- titulo -->
-        <h3 class="title-a">EMPRESARIAL Y TURÍSTICO</h3><!-- resumen -->
-         <!-- <a href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a>-->
-      </div>
-    </section>
+    .slick-slide {
+      margin: 0px;
+    }
 
+    .slick-slide img {
+      width: 100%;
+    }
 
-    <section class="nosotros contenedor">
-         
-        <article class="item-nosotros a">
-        <h3>Conocenos.</h3>
-          <p>Cotytsa te ofrece un servicio de transporte confortable, con camionetas seguras en las que podrás viajar de forma placentera y con precios accesibles y competitivos, viajamos a cualquier parte de la República mexicana y a todo tipo de eventos sociales. Nuestros servicios son constantemente evaluados por nuestros clientes, lo que nos hace ser una empresa en desarrollo constante.
-          </p>
-        </article>
-        <article class="item-nosotros b">
-          <h3>Nuestros valores:</h3>
-         
-          <ul> 
-            <li>Puntualidad</li>
-            <li>Limpieza</li>
-            <li>Comodidad</li>
-            <li>Seguridad</li>
-            <li>Responsabilidad</li>
-            <li>Atención Personalizada</li>        
-
-          </ul>
-        </article>
-   
-    </section>
-    
-    <section class="servicios contenedor">
-      <div class="titulo-servicios">
-        <h2>NUESTROS SERVICIOS</h2>
-        <h3>Contamos con todo tipo de transportación; personal y empresarial. Viaje con total comodidad y seguridad.</h3>
-      </div>
-      <div id="object" class="items-servicios slideUp">
-        <article class="item-servicios">
-          <figure >
-            <img src="images/fdo-s1.jpg" alt="">
-          </figure>
-          <div class="descripcion-imagen-servicios">
-            <h3 class="titulo-descripcion-servicios">SERVICIOS EMPRESARIALES</h3>
-             <ul> 
-              <li>Traslados aeropuerto</li>
-              <li>Traslados corporativos</li>
-              <li>Oficinas corporativas</li>
-              <li>Traslados a capacitaciones</li>
-              <li>Traslados a otras ciudades</li>
-
-            </ul>
-
-          </div>
-        </article>
-        <article class="item-servicios">
-          <figure >
-            <img src="images/fdo-s1.jpg" alt="">
-          </figure>
-          <div class="descripcion-imagen-servicios">
-             <h3 class="titulo-descripcion-servicios">SERVICIOS ESPECIALES</h3>
-             <ul> 
-              <li>Bodas</li>
-              <li>Graduaciones</li>
-              <li>XV años</li>
-              <li>Congresos</li>
-              <li>Convenciones</li>
-              <li>Exposiciones</li>
-              <li>Festivales artísticos</li>
-
-            </ul>
-          </div>
-        </article>
-        <article class="item-servicios">
-          <figure >
-            <img src="images/fdo-s1.jpg" alt="">
-          </figure>
-          <div class="descripcion-imagen-servicios">
-             <h3 class="titulo-descripcion-servicios">SERVICIOS TURÍSTICOS</h3>
-             <ul> 
-              <li>Excursiones religiosas</li>
-              <li>Viajes a la playa</li>
-              <li>Viajes escolares</li>
-              <li>Excursiones de montaña</li>
-              <li>Actividades extremas</li>
-              <li>Viajes culturales</li>
-
-            </ul>
-          </div>
-        </article>
-      </div>  
-      
-    </section>
-<section class="autobuses contenedor ">
-  <div class="autobuses-contenedor ">
-    
-    <h2>Servicios de Transporte</h2>
-    <div id="object-auto" class="items-autobuses slideRight">      
-      <span>Económicos</span>
-      <span>Gran Turismo</span>
-      <span>Súper Turismo</span>    
-    </div>
-  </div>
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+  </style>
+</head>
+<body>
+<section class="header ">
+	<div class="detail"></div>
+	<nav>
+		<ul class="menu">
+			<li><a href="">SERVICIOS</a></li>
+			<li><a href="">NUESTROS VEHICULOS</a></li>
+			<li><a href="">CONTACTO</a></li>
+		</ul>
+	</nav>
+	<div class="logo">
+		<img src="img/logo.png" width="300" alt="">
+	</div>
+	<div class="title">
+		<h1>TU MEJOR OPCIÓN EN RENTA DE TRANSPORTE DE PASAJEROS</h1>
+		<h2>EMPRESARIAL Y TURÍSTICO</h2>
+		<p> 509 2584 y 509 2583</p>
+	</div>
 </section>
-  <section class="vehiculos contenedor">
-      <h2>NUESTROS VEHÍCULOS</h2>
-      <h3>Renta de camionetas</h3>
-      <p>Contamos con unidades para 7, 12, 14 y 20 pasajeros</p>
-      <div id="owl-demo" >
-        <div class="item" >
-          <a href="#" target="_blank">
-            <img src="images/passenger.jpg" width="600" alt="AnacTV">
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" target="_blank">
-            <img src="images/passenger.jpg" width="600" alt="Ayuntamiento de Huixquilucan">
-            <p>hunda</p>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" target="_blank">
-            <img src="images/passenger.jpg" width="600" alt="AnacTV">
-            <p>hunda</p>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" target="_blank">
-            <img src="images/passenger.jpg" width="600" alt="Ayuntamiento de Saltillo">
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" target="_blank">
-            <img src="images/passenger.jpg" width="600" alt="Ayuntamiento de Nogales">
-          </a>
-        </div>
-        <div class="item">
-          <a href="#" target="_blank">
-            <img src="images/passenger.jpg" width="600" alt="AnacTV">
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="contacto contenedor">
-          <h2>Contacto</h2>
+<section class="about">
+	<div class="container about-container">
+		<div class="we">
+			<p>
+				Van Service te ofrece un servicio de transporte confortable, con camionetas seguras en las que podrás viajar de forma placentera y con precios accesibles y competitivos, viajamos a cualquier parte de la República mexicana y a todo tipo de eventos sociales.
+				Nuestros servicios son constantemente evaluados por nuestros clientes, lo que nos hace ser una empresa en desarrollo cons
+			</p>
+			
+		</div>
+		<div class="values">
+			<h3>Nuestros valores:</h3>
+			
+			<ul>
+				<li>Puntualidad</li>
+				<li>Limpieza</li>
+				<li>Comodidad</li>
+				<li>Seguridad</li>
+				<li>Responsabilidad</li>
+				<li>Atención Personalizada</li>			
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="point">
+	<div class=" container-point">
+		<div class="point-left">
+			<div class="animation-point">
+				<h2>PUNTO A PUNTO </h2>
+				<p>Van Service lo transporta de un punto a otro sin necesidad de rentar la unidad por el día completo haciendo que su grupo llegue con seguridad a su destino.</p>
+			</div>
+			
+		</div>
+		<div class="point-right">
+			
+		</div>
+	</div>
+</section>
+<section class="services ">
+	<h2>NUESTROS SERVICIOS</h2>
+	<h3>Contamos con todo tipo de transportación; personal y empresarial.Viaje con total comodidad y seguridad.
+	</h3>
+	<div class="container-items-services container">	
+		<article class="item-services">
+			<div class="item-image-services">
+				<img src="img/empresarial.jpg" width="300" height="200" alt="">				
+			</div>
+			<div class="item-image-description-services">
+				<h3>SERVICIOS EMPRESARIALES</h3>
+				<ul>
+					<li>Traslados aeropuerto</li>
+					<li>Traslados corporativos</li>
+					<li>Oficinas corporativas</li>
+					<li>Traslados a Capacitaciones</li>
+					<li>Traslados a otras ciudades</li>
+				</ul>
+				
+			</div>
+		</article>
+		<article class="item-services">
+			<div class="item-image-services">
+				<img src="img/especiales.jpg" width="300" height="200" alt="">				
+			</div>
+			<div class="item-image-description-services">
+				<h3>SERVICIOS EMPRESARIALES</h3>
+				<ul>
+					<li>Bodas</li>
+					<li>Graduaciones</li>
+					<li>XV años</li>
+					<li>Congresos</li>
+					<li>Convenciones</li>
+					<li>Exposiciones</li>
+					<li>Festivales artisticos</li>
 
+				</ul>
+				
+			</div>
+		</article>
+		<article class="item-services">
+			<div class="item-image-services">
+				<img src="img/turistico.jpg"  height="200" alt="">				
+			</div>
+			<div class="item-image-description-services">
+				<h3>SERVICIOS EMPRESARIALES</h3>
+				<ul>
+					<li>Excursiones religiosas</li>
+					<li>Viajes a la playa</li>
+					<li>Viajes escolares</li>
+					<li>Excurciones de montaña</li>
+					<li>Actividades extremas</li>
+					<li>Viajes culturLES</li>
 
-      <div class="contenedor-contacto">
-        <div class="formulario-contacto media-form ">    
+				</ul>
+				
+			</div>
+		</article>
+	</div>
+</section>
 
-          <form class="formulario">
-            <div class="col1">
-              <label for="nombre">Nombre</label>
-              <input type="text" required id="nombre" name="nombre"/>
-              <label for="email">E-mail</label>
-              <input type="email" required id="email" name="email"/>
-              <div class="sexo">
-                <label for="mujer">
-                  <input type="radio" id="mujer" checked name="sexo" value="mujer"> mujer
-                </label>
-                <label for="hombre">
-                  <input type="radio" id="hombre" name="sexo" value="hombre"> hombre
-                </label>
-              </div>
-              <div class="intereses">
-                <label for="cotizacion">
-                  <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Cotización
-                </label>
-                <label for="reclamos">
-                  <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Reclamos
-                </label>
-                <label for="comentarios">
-                  <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comentarios
-                </label>
-                <label for="otros">
-                  <input type="checkbox" id="otros" name="intereses" value="otros"> Otros
-                </label>
-              </div>
-            </div>
-            <div class="col2">
-              <label for="comentarios">Comentarios</label>
-              <textarea name="comantarios" id="comentarios" cols="30" rows="7"></textarea>
-              <input type="submit" value="Enviar" class="button"/>
-            </div>
-          </form>
-      
-        </div>
-        <div class="info-contacto media-form">
-          <p>Cotytsa agradece que nos envies tus comentarios a través de nuestro formulario </p>
-          <p>Dirección: Lorem ipsum dolor sit amet, consectetur soluta.</p>
-          <p>Telefono: 223245542</p>
-          <p>Correo: me@cotytsa.com</p>
-      
-          
-        </div>
+<section class="buss">
+	<h2>Renta de autobuses</h2>
+	<p>Económico, Gran Turismo y Súper Turismo</p>
+</section>
 
-        
-      </div>
-      
-      <div class="mapa ">
+ <section class="carousel">
+	<h2>NUESTROS VEHÍCULOS</h2>
+	<h3>Renta de camionetas</h3>
+	<div class="autoplay slider">
+		<div>
+	      <img  src="img/slide1.jpg">
+	      <p>van Chevrolet Passenger</p>
+	    </div>
+	    <div>
+	      <img  src="img/slide2.jpg">
+	      <p>van Chevrolet Passenger</p>
+	    </div>
+	    <div>
+	      <img  src="img/slide3.jpg">
+	      <p>van Chevrolet Passenger</p>
+	    </div>
+	    <div>
+	      <img  src="img/slide4.jpg">
+	      <p>van Chevrolet Passenger</p>
+	    </div>
+	    <div>
+	      <img  src="img/slide5.jpg">
+	      <p>van Chevrolet Passenger</p>
+	    </div>
+	    <div>
+	      <img  src="img/slide6.jpg">
+	      <p>van Chevrolet Passenger</p>
+	    </div>
+	
+	</div>
+
+  </section>
+
+<footer>
+	<div class="contacto">
+	<h2>CONTACTO COTYTSA</h2>
+	<h3>Estamos para servirle</h3>
+		
+	</div>
+	<div class="contacto-datos">
+		<p>me@cotytsa.com.mx</p>
+		<p>Teléfonos: 509 2584 y 509 2583</p>
+		<p>97 oriente 225 Col. Jardines de Bugambilias</p>
+		<p>abrir el mapa de ubicación</p>
+	</div>
+	 <div class="mapa ">
         <iframe class="mapa-contenedor" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7543.006589186366!2d-98.19858619466035!3d19.041596872548624!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1500562544727" width="100%"  height="450" frameborder="0" style="border:0; " allowfullscreen></iframe>
       </div>
-    </section>
+	
+</footer>	
 
-    <footer class="footer contenedor">
-      <div class="footer-contacto">
-          <img data-src="images/logo-blanco.png|images/logo-blancox2.png" alt="logotipo blanco"/>
-          <a href="tel:+573024456678"><strong>Telefono</strong> <span>3024456678</span></a>
-          <a href="mailto:contacto@invie.com"><strong>E-mail</strong> <span>contacto@cotytsa.com</span></a>
-        </div>
-    </footer>
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
- <script src="js/jquery-1.9.1.min.js"></script>
-    <!-- Include js plugin-->
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
-    <script>
-
-      $(window).scroll(function() {
-    $('.item-servicios').each(function(){
-    var imagePos = $(this).offset().top;
-
-    var topOfWindow = $(window).scrollTop();
-      if (imagePos < topOfWindow+400) {
-        $(this).addClass("slideUp");
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  $('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
       }
-    });
-  });
-
-
-
-
-      var consulta = window.matchMedia('(max-width: 500px)');
-      consulta.addListener(mediaQuery);
-
-      var $burguerButton = document.getElementById('burguer-button');
-      var $menu = document.getElementById('menu');
-      function toggleMenu(){
-        $menu.classList.toggle('active')
-      };
-      function showMenu(){
-        $menu.classList.add('active');
-      };
-      function hideMenu(){
-        $menu.classList.remove('active');
-      };
-
-      function mediaQuery() {
-        if (consulta.matches) {
-          // si se cumple hagamos esto
-          console.log('se cumplió la condicion');
-          $burguerButton.addEventListener('touchstart', toggleMenu);
-        } else {
-          $burguerButton.removeEventListener('touchstart', toggleMenu);
-          // si no se cumple hagamos esto
-          console.log('no se cumplió la condicion');
-        }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
-      mediaQuery();
-
-      // lazy loading
-      var bLazy = new Blazy({
-          selector: 'img'
-      });
-      // $burguerButton.addEventListener('touchstart', toggleMenu);
-
-      // function toggleMenu(){
-      //   $menu.classList.toggle('active')
-      // };
-
-      // Gestos touch
-      var $body = document.body;
-
-      var gestos = new Hammer($body);
-      gestos.on('swipeleft', hideMenu);
-      gestos.on('swiperight', showMenu);
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+  </script>
 
 
-
-    </script>
-  </body>
+</body>
 </html>
