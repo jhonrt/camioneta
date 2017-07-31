@@ -101,11 +101,10 @@ width: 50%;
 
 }
 .animation-point{
-	
-	    border: 1px solid;
-    position: absolute;
+	float: left;
     background: rgba(255, 255, 255, 0.8);
     width: 60%;
+    position: relative;
 
 }
 .point-right{
@@ -232,4 +231,74 @@ footer{
 }
  .mapa.mapa-contenedor{
     width: 100%;
+  }
+
+
+@media screen and (max-width: 800px){
+	.title{
+		text-align: center;
+	}
+.title h1{
+		font-size: 40px;
+	}
+.title h2{
+	font-size: 30px;
+}
+.title p{
+	font-size: 25px;
+}
+
+.header .logo{
+	margin-top: 30px;
+}
+
+.item-services {
+	width: 30%;
+}
+
+}
+
+@media screen and (max-width: 650px) {
+	.header{
+		height: 100vh;
+
+	}
+	nav .menu{
+		padding: 0;
+	}
+	nav .menu li {
+
+    font-size: 16px;
+    margin: 0 18px;
+}
+.header .logo img{
+	margin-top: 0px;
+	width: 200px;
+}
+.title h1{
+		font-size: 25px;
+	}
+	.title h2{
+		font-size: 19px;
+	}
+	.title p{
+		font-size: 16px
+	}
+
+	.about{
+		    height: initial;
+	}
+.about-container,.container-point,.container-items-services{
+	display: flex;
+	flex-direction: column;
+
+}
+.we, .values,.point-left,.point-right,.item-services{
+	width: 100%;
+}
+
+}
+
+  @media screen and (max-width: 500px){
+
   }
