@@ -101,10 +101,8 @@ width: 50%;
 
 }
 .animation-point{
-	float: left;
     background: rgba(255, 255, 255, 0.8);
-    width: 60%;
-    position: relative;
+
 
 }
 .point-right{

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
       <link rel="stylesheet" type="text/css" href="css/slick.css">
       <link rel="stylesheet" href="css/animation.css">
+      <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
  <style type="text/css">
     html, body {
@@ -17,7 +18,10 @@
     * {
       box-sizing: border-box;
     }
+#object{
 
+	visibility: hidden;
+}
     .slider {
         width: 100%;
         margin: 50px auto;
@@ -44,6 +48,7 @@
     	animation: titleh 3s forwards ;
     	opacity: 0;
     }
+   
     @keyframes menuopacity{
     	0%{
     		opacity: 0;
@@ -111,8 +116,8 @@
 </section>
 <section class="point">
 	<div class=" container-point">
-		<div class="point-left">
-			<div class="animation-point">
+		<div  class="point-left ">
+			<div id="object" class="animation-point slideRight">
 				<h2>PUNTO A PUNTO </h2>
 				<p>Van Service lo transporta de un punto a otro sin necesidad de rentar la unidad por el día completo haciendo que su grupo llegue con seguridad a su destino.</p>
 			</div>
@@ -278,6 +283,19 @@
   ]
 });
   </script>
+
+  <script>
+	$(window).scroll(function() {
+		$('.animation-point ').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+</script>
 
 
 </body>
